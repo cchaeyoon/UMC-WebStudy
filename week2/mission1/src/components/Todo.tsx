@@ -22,7 +22,8 @@ export const Todo = () => {
   };
 
   const completeTodo = (todo: TTodo) => {
-    setTodos(prevTodos => prevTodos.filter(t => t.id !== todo.id));
+    setTodos(prevTodos => prevTodos.filter(t => t.id !== todo.id)); // 지금 완료하려는 todo와 id가 다른 것만 남김
+    // filter에서 t를 남김
     setDoneTodos(prevDoneTodos => [...prevDoneTodos, todo]);
   };
 
