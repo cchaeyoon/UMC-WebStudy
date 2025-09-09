@@ -1,6 +1,6 @@
 export const NotFound = () => {
   return (
-    <div>NotFound다.</div>
+    <div className="text-xl font-bold">NotFound다.</div>
   )
 }
 
